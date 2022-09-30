@@ -1,0 +1,58 @@
+{
+    "name":"cbConvertAPI",
+    "version":"0.0.0",
+    "author":"Dan Card <dcard@ortussolutions.com>",
+    "location":"ForgeboxStorage",
+    "homepage":"https://github.com/djcard/cbConvertAPI",
+    "documentation":"https://github.com/djcard/cbConvertAPI",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/djcard/cbConvertAPI"
+    },
+    "bugs":"https://github.com/djcard/cbConvertAPI/issues",
+    "slug":"cbConvertAPI",
+    "shortDescription":"a Coldbox wrapper for the ConvertAPI.com api",
+    "description":"A coldbox wrapper for the https://www.convertapi.com/ api ",
+    "instructions":"",
+    "changelog":"",
+    "type":"modules",
+    "keywords":[],
+    "private":false,
+    "projectURL":"",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "contributors":[],
+    "dependencies":{},
+    "devDependencies":{},
+    "installPaths":{},
+    "scripts":{},
+    "ignore":[
+        "**/.*",
+        "/test/",
+        "/tests/"
+    ],
+    "testbox":{
+        "bundles":"",
+        "directory":"tests.specs",
+        "excludes":"",
+        "labels":"",
+        "options":{},
+        "recurse":true,
+        "reporter":"",
+        "runner":[
+            {
+                "default":""
+            }
+        ],
+        "testBundles":"",
+        "testSpecs":"",
+        "testSuites":"",
+        "verbose":true,
+        "watchDelay":500,
+        "watchPaths":"**.cfc"
+    }
+}
