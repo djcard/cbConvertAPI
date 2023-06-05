@@ -1,6 +1,6 @@
 {
     "name":"cbConvertAPI",
-    "version":"0.0.0",
+    "version":"0.0.1",
     "author":"Dan Card <dcard@ortussolutions.com>",
     "location":"ForgeboxStorage",
     "homepage":"https://github.com/djcard/cbConvertAPI",

@@ -40,54 +40,54 @@
  **/
 component {
 
-    // Module Properties
-    this.title = 'cbConvertAPI';
-    this.author = 'Dan Card';
-    this.webURL = '';
-    this.description = 'An Attempt to filter through the cfml error structure and retreive pertinent info and filter out noise';
-    this.version = '1.0.0';
-    // If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
-    this.viewParentLookup = true;
-    // If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
-    this.layoutParentLookup = true;
-    // Module Entry Point
-    this.entryPoint = 'cbConvertAPI';
-    // Inherit Entry Point
-    this.inheritEntryPoint = false;
-    // Model Namespace
-    this.modelNamespace = 'cbConvertAPI';
-    // CF Mapping
-    this.cfmapping = 'cbConvertAPI';
-    // Auto-map models
-    this.autoMapModels = true;
-    // Module Dependencies
-    this.dependencies = [];
+	// Module Properties
+	this.title              = "cbConvertAPI";
+	this.author             = "Dan Card";
+	this.webURL             = "";
+	this.description        = "An Attempt to filter through the cfml error structure and retreive pertinent info and filter out noise";
+	this.version            = "1.0.0";
+	// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
+	this.viewParentLookup   = true;
+	// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
+	this.layoutParentLookup = true;
+	// Module Entry Point
+	this.entryPoint         = "cbConvertAPI";
+	// Inherit Entry Point
+	this.inheritEntryPoint  = false;
+	// Model Namespace
+	this.modelNamespace     = "cbConvertAPI";
+	// CF Mapping
+	this.cfmapping          = "cbConvertAPI";
+	// Auto-map models
+	this.autoMapModels      = true;
+	// Module Dependencies
+	this.dependencies       = [];
 
-    /**
-     * Configure the module
-     */
-    function configure() {
-        // parent settings
-        parentSettings = {};
+	/**
+	 * Configure the module
+	 */
+	function configure(){
+		// parent settings
+		parentSettings = {};
 
-        // module settings - stored in modules.name.settings
-        settings = {
-            apiKey: getSystemSetting ('CONVERTAPI_API_KEY', ''),
-            apiSecret: getSystemSetting ('CONVERT_API_SECRET'),
-            imageOutputPath: getSystemSetting ('IMAGE_OUTPUT_PATH', '')
-        };
+		// module settings - stored in modules.name.settings
+		settings = {
+			apiKey          : getSystemSetting( "CONVERTAPI_API_KEY", "" ),
+			apiSecret       : getSystemSetting( "CONVERT_API_SECRET", "" ),
+			imageOutputPath : getSystemSetting( "IMAGE_OUTPUT_PATH", "" )
+		};
 
-        // Layout Settings
-        layoutSettings = {defaultLayout: ''};
+		// Layout Settings
+		layoutSettings = { defaultLayout : "" };
 
-        // Custom Declared Points
-        interceptorSettings = {customInterceptionPoints: []};
+		// Custom Declared Points
+		interceptorSettings = { customInterceptionPoints : [] };
 
-        // Custom Declared Interceptors
-        interceptors = [];
+		// Custom Declared Interceptors
+		interceptors = [];
 
-        // Binder Mappings
-        // binder.map("Alias").to("#moduleMapping#.models.MyService");
-    }
+		// Binder Mappings
+		// binder.map("Alias").to("#moduleMapping#.models.MyService");
+	}
 
 }
